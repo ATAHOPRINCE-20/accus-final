@@ -53,10 +53,11 @@ function Counter({ value, suffix = '', prefix = '' }: { value: number; suffix?: 
 }
 
 export function StatsStrip() {
+  const yearsOfService = new Date().getFullYear() - 2020;
   const stats = [
     { 
       icon: Users, 
-      value: 50000, 
+      value: 5000, 
       suffix: '+',
       label: 'Happy Clients' 
     },
@@ -75,7 +76,7 @@ export function StatsStrip() {
     },
     { 
       icon: Award, 
-      value: 15, 
+      value: yearsOfService, 
       suffix: '+ Years',
       label: 'Industry Experience' 
     },

@@ -59,7 +59,7 @@ export function About() {
               Empowering Uganda's Financial Future
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              For over 15 years, Accus Capital has been at the forefront of providing innovative financial solutions to Ugandan families and businesses. We understand the unique challenges and opportunities in our market, and we're committed to helping you achieve your financial goals.
+              For over {new Date().getFullYear() - 2020} years, Accus Capital has been at the forefront of providing innovative financial solutions to Ugandan families and businesses. We understand the unique challenges and opportunities in our market, and we're committed to helping you achieve your financial goals.
             </p>
 
             {/* Key Points */}

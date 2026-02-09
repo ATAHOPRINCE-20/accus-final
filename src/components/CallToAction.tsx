@@ -138,7 +138,7 @@ export function CallToAction() {
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-white rounded-full"></div>
-              <span>15+ Years of Service</span>
+              <span>{new Date().getFullYear() - 2020}+ Years of Service</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-white rounded-full"></div>

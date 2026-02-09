@@ -13,7 +13,7 @@ export function AboutPage() {
       <main>
         <PageHero 
           title="About Us" 
-          subtitle="Building financial futures for Ugandan families and businesses since 2017"
+          subtitle={`Building financial futures for Ugandan families and businesses since ${new Date().getFullYear() - (new Date().getFullYear() - 2020)}`}
           backgroundImage="https://res.cloudinary.com/dywusgc6j/image/upload/v1770643263/PHOTO-2026-02-09-15-23-34_nlbrct.jpg"
         />
         <WhoWeAre />

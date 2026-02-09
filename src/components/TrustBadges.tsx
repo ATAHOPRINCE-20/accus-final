@@ -10,7 +10,7 @@ export function TrustBadges() {
     },
     {
       icon: Award,
-      title: '8+ Years',
+      title: `${new Date().getFullYear() - 2020}+ Years`,
       description: 'Serving Uganda',
     },
     {
