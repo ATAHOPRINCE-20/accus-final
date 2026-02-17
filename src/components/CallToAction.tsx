@@ -66,7 +66,7 @@ export function CallToAction() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl text-gray-200 mb-10 max-w-2xl mx-auto"
           >
-            Join thousands of satisfied Ugandans who have achieved their financial goals with our fast, reliable, and affordable loan solutions.
+            Join hundreds of satisfied Ugandans who have achieved their financial goals with our fast, reliable, and affordable loan solutions.
           </motion.p>
 
           <motion.div

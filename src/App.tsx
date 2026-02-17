@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Toaster } from 'sonner';
 import { useState, useEffect } from 'react';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
@@ -50,6 +51,7 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
+      <Toaster position="top-center" richColors />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

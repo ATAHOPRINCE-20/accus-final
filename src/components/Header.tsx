@@ -135,7 +135,7 @@ export function Header() {
           >
             <Link to="/apply">
               <Button className="bg-[#00A99D] hover:bg-[#008B82] text-white px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
-                Apply for Loan
+                Apply for a Loan
               </Button>
             </Link>
           </motion.div>

@@ -50,9 +50,9 @@ export function WhyChooseUs() {
           <h2 className="text-4xl md:text-5xl font-bold text-[#00A99D] mb-4">
             Your Trusted Financial Partner
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          {/* <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             We combine speed, trust, and excellent service to provide you with the best loan experience
-          </p>
+          </p> */}
         </motion.div>
 
         {/* Benefits Grid */}

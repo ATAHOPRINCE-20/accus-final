@@ -26,7 +26,7 @@ export function WhoWeAre() {
         </motion.div>
 
         {/* Vision & Mission */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16 px-4 md:px-20">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -56,22 +56,6 @@ export function WhoWeAre() {
             <h3 className="text-2xl font-bold text-[#54585A] mb-4">Mission</h3>
             <p className="text-gray-700 text-lg leading-relaxed">
               To deliver responsible, accessible, and trusted financial solutions in Uganda.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-gradient-to-br from-[#00A99D]/5 to-[#00A99D]/10 rounded-2xl p-8 border border-[#00A99D]/20"
-          >
-            <div className="w-14 h-14 bg-[#00A99D]/10 rounded-full flex items-center justify-center mb-6">
-              <Shield className="w-7 h-7 text-[#00A99D]" />
-            </div>
-            <h3 className="text-2xl font-bold text-[#54585A] mb-4">Motto</h3>
-            <p className="text-gray-700 text-lg leading-relaxed">
-              Trusted Finance.
             </p>
           </motion.div>
         </div>

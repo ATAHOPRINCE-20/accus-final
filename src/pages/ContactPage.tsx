@@ -12,7 +12,7 @@ export function ContactPage() {
   const [showForm, setShowForm] = useState(false);
 
   const branches = [
-    { name: 'Kampala Branch', address: 'Plot 123, Kampala Road', phone: '+256 763 820 376' },
+    { name: 'Kampala Branch', address: <>Conrad Plaza, 1st floor<br/>Plot 22, Entebbe Road</>, phone: '+256 763 820 376' },
     // Future branches - Uncomment when operational:
     // { name: 'Entebbe Branch', address: 'Plot 45, Airport Road', phone: '+256 700 123 457' },
     // { name: 'Jinja Branch', address: 'Plot 78, Main Street', phone: '+256 700 123 458' },
@@ -33,7 +33,7 @@ export function ContactPage() {
       <main>
         <PageHero 
           title="Contact Us" 
-          subtitle="Get in touch with us - we're here to help you achieve your financial goals"
+          subtitle="Get in touch with us - we're here to help you achieve your financial goals. TrustedFinance."
           backgroundImage="https://res.cloudinary.com/dywusgc6j/image/upload/v1771087820/woman-enjoys-cellphone-communication-uses-contact-application-talks-via-modern-device-wears-casual-turtleneck-poses-outside_1_px6dw0.jpg"
         />
 
@@ -161,7 +161,7 @@ export function ContactPage() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#54585A] mb-2">Email Us</h4>
-                      <p className="text-gray-600">info@accuscapital.ug</p>
+                      <p className="text-gray-600">info@accuscapital.com</p>
                       <p className="text-gray-600">accuscapital@gmail.com</p>
                     </div>
                   </div>

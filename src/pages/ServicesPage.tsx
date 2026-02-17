@@ -21,7 +21,7 @@ export function ServicesPage() {
       <main>
         <PageHero 
           title="Our Services" 
-          subtitle="Comprehensive financial solutions tailored to meet your unique needs"
+          subtitle="Comprehensive financial solutions tailored to meet your unique needs."
           backgroundImage="https://res.cloudinary.com/dywusgc6j/image/upload/v1771086592/african-business-male-people-shaking-hands_1_nasx71.jpg"
         />
         <Services />

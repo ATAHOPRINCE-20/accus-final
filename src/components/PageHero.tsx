@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 interface PageHeroProps {
   title: string;
-  subtitle?: string;
+  subtitle?: React.ReactNode;
   backgroundImage?: string;
 }
 
@@ -39,9 +39,9 @@ export function PageHero({ title, subtitle, backgroundImage }: PageHeroProps) {
             {title}
           </h1>
           {subtitle && (
-            <p className="text-xl text-white max-w-3xl mx-auto">
+            <div className="text-xl text-white max-w-3xl mx-auto">
               {subtitle}
-            </p>
+            </div>
           )}
         </motion.div>
       </div>

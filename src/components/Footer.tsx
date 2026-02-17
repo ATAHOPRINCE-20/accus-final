@@ -46,7 +46,7 @@ export function Footer() {
               />
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Your trusted partner for fast, reliable, and affordable financial solutions across Uganda.
+              Your trusted partner for fast, reliable, and affordable financial solutions across Uganda. TrustedFinance.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -120,7 +120,7 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <MapPin className="text-[#00A99D] flex-shrink-0 mt-1" size={20} />
-                <span>Plot 123, Kampala Road<br />Kampala, Uganda</span>
+                <span>Conrad Plaza, 1st floor<br />Plot 22, Entebbe Road<br />Kampala, Uganda</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="text-[#00A99D] flex-shrink-0" size={20} />
@@ -128,13 +128,13 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="text-[#00A99D] flex-shrink-0" size={20} />
-                <span>info@accuscapital.ug</span>
+                <span>info@accuscapital.com</span>
               </li>
               <li className="flex items-start space-x-3">
                 <Clock className="text-[#00A99D] flex-shrink-0 mt-1" size={20} />
                 <div>
-                  <div>Mon - Fri: 8:00 AM - 6:00 PM</div>
-                  <div>Sat: 9:00 AM - 1:00 PM</div>
+                  <div>Mon - Fri: 9:00 AM - 5:00 PM</div>
+                  <div>Sat: 9:00 AM - 3:00 PM</div>
                 </div>
               </li>
             </ul>

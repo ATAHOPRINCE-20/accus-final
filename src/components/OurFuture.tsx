@@ -14,9 +14,9 @@ export function OurFuture() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-[#54585A] mb-6">Our Future</h2>
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-gray-700 leading-relaxed">
+            {/* <p className="text-lg text-gray-700 leading-relaxed">
               Accus Capital continues to strengthen its systems, expand access responsibly, and invest in technology and partnerships that support inclusive and sustainable financial services in Uganda.
-            </p>
+            </p> */}
           </div>
         </motion.div>
 

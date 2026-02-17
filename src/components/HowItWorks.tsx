@@ -40,9 +40,9 @@ export function HowItWorks() {
             Simple Process
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-[#54585A] mb-6">How It Works</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          {/* <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Getting a loan has never been easier. Three simple steps to financial freedom.
-          </p>
+          </p> */}
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 relative">

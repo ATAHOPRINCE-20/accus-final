@@ -24,7 +24,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
           >
-            Trusted Finance for Your Growth
+            TrustedFinance for Your Growth
           </motion.h1>
 
           <motion.p

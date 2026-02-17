@@ -12,7 +12,7 @@ export function Services({ limit }: ServicesProps) {
       icon: User,
       title: 'Personal Loans',
       description: 'Designed to address individual needs such as education, medical emergencies, or personal projects, with structured repayment options.',
-      image: 'https://res.cloudinary.com/dywusgc6j/image/upload/v1771012851/woman-with-yellow-piggy-bank-hands_orzna5.jpg',
+      image: 'https://res.cloudinary.com/dywusgc6j/image/upload/v1771275378/businessman-smiling-camera-office_l9r4xq_1_ikdww4.jpg',
       anchor: 'personal-loans',
     },
     {
@@ -57,13 +57,13 @@ export function Services({ limit }: ServicesProps) {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 bg-[#E6F7F6] text-[#00A99D] rounded-full text-sm mb-4 font-semibold">
+          {/* <span className="inline-block px-4 py-2 bg-[#E6F7F6] text-[#00A99D] rounded-full text-sm mb-4 font-semibold">
             What We Offer
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#54585A] mb-6">Our Services</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          </span> */}
+          <h2 className="text-4xl md:text-5xl font-bold text-[#54585A] mb-6">What We Offer</h2>
+          {/* <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Comprehensive financial solutions designed to meet diverse needs
-          </p>
+          </p> */}
         </motion.div>
  
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

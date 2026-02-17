@@ -7,28 +7,118 @@ export function FAQ() {
 
   const faqs = [
     {
-      question: 'How fast can I get a loan?',
-      answer: 'Once your application is approved, funds are typically disbursed within 24-48 hours. Emergency loans can be processed even faster, with same-day disbursement available for qualified applicants.',
+      question: 'Is Accus Capital a licensed financial institution?',
+      answer: 'Yes. Accus Capital Limited operates under Uganda’s Tier 4 Microfinance Institutions and Money Lenders Act. We maintain structured policies, internal controls, and responsible lending standards in line with regulatory requirements.',
     },
     {
-      question: 'What documents do I need to apply?',
-      answer: 'You need a valid National ID, proof of income (payslip, bank statements, or business records), and utility bills for address verification. Business loan applicants may need additional business registration documents.',
+      question: 'What type of loans does Accus Capital provide?',
+      answer: 'We provide secured loans only. All loan facilities require acceptable collateral as part of our responsible lending framework.',
     },
     {
-      question: 'Do I need collateral for a loan?',
-      answer: 'It depends on the loan type and amount. Personal loans up to UGX 5M typically don\'t require collateral. Larger loans and business loans may require collateral or a guarantor for security purposes.',
+      question: 'What loan amounts do you offer?',
+      answer: 'We provide loans ranging from UGX 100,000 to UGX 100,000,000, depending on collateral value, repayment capacity, and internal assessment.',
     },
     {
-      question: 'What are your interest rates?',
-      answer: 'Our interest rates start from 18% per annum, depending on the loan type, amount, and repayment period. We offer competitive rates with transparent terms and no hidden fees.',
+      question: 'What repayment periods do you offer?',
+      answer: 'Loan durations range from 1 month to 12 months. The approved term depends on the loan amount, collateral value, and repayment capacity.',
     },
     {
-      question: 'Can I repay my loan early?',
-      answer: 'Yes! We encourage early repayment and do not charge penalties for paying off your loan ahead of schedule. Early repayment can also help you qualify for larger loans in the future.',
+      question: 'What types of collateral do you accept?',
+      answer: (
+        <>
+          We may accept:
+          <ul className="list-disc pl-5 mt-2 space-y-1">
+            <li>Motor vehicle and cycle logbooks</li>
+            <li>Land titles</li>
+            <li>Selected valuable assets (subject to assessment)</li>
+          </ul>
+          <p className="mt-2">Collateral must be legally owned and verifiable.</p>
+        </>
+      ),
     },
     {
-      question: 'How do I check my loan application status?',
-      answer: 'You can check your application status by calling our customer service hotline at +256 763 820 376, visiting any of our branches, or through our mobile banking platform.',
+      question: 'How do you determine the loan amount?',
+      answer: (
+        <>
+          Loan amounts are determined by:
+          <ul className="list-disc pl-5 mt-2 space-y-1">
+            <li>Collateral value</li>
+            <li>Repayment capacity</li>
+            <li>Loan purpose</li>
+            <li>Existing financial obligations</li>
+          </ul>
+          <p className="mt-2">We aim to approve sustainable amounts aligned with your capacity.</p>
+        </>
+      ),
+    },
+    {
+      question: 'How do you assess repayment capacity?',
+      answer: (
+        <>
+          We conduct a structured financial review. Depending on your situation, we may request:
+          <ul className="list-disc pl-5 mt-2 space-y-1">
+            <li>Bank statements</li>
+            <li>Proof of income</li>
+            <li>Company books (for registered businesses)</li>
+            <li>Evidence of trading activity</li>
+          </ul>
+          <p className="mt-2">This ensures responsible lending.</p>
+        </>
+      ),
+    },
+    {
+      question: 'Who can apply for a loan?',
+      answer: 'Individuals, registered businesses, and organised groups may apply, subject to eligibility and documentation requirements.',
+    },
+    {
+      question: 'What documents are required?',
+      answer: (
+        <>
+          Typically:
+          <ul className="list-disc pl-5 mt-2 space-y-1">
+            <li>Valid national ID</li>
+            <li>Proof of income or business activity</li>
+            <li>Business or group registration documents (where applicable)</li>
+          </ul>
+          <p className="mt-2">Specific requirements depend on the loan type.</p>
+        </>
+      ),
+    },
+    {
+      question: 'Do I need to visit the office?',
+      answer: 'Yes. Applicants MUST visit our office in person for identity verification, collateral assessment, and documentation. We do not approve loans remotely without proper verification.',
+    },
+    {
+      question: 'How does the application process work?',
+      answer: (
+        <>
+          The process includes:
+          <ol className="list-decimal pl-5 mt-2 space-y-1">
+            <li>Application submission</li>
+            <li>Document and collateral verification</li>
+            <li>Financial assessment</li>
+            <li>Approval decision</li>
+            <li>Agreement signing and disbursement</li>
+          </ol>
+          <p className="mt-2">Clear communication is maintained throughout.</p>
+        </>
+      ),
+    },
+    {
+      question: 'How long does approval take?',
+      answer: 'We aim to disburse within 24 hours. However, processing time depends on documentation completeness and collateral verification. Complete and accurate submissions help speed up the process.',
+    },
+    {
+      question: 'What are your interest rates and fees?',
+      answer: 'We lend at 2.8% interest rate per month. However, added fees vary by loan product and duration. All terms are clearly explained before signing. We do not apply hidden charges.',
+    },
+    {
+      question: 'What happens if I experience repayment difficulties?',
+      answer: 'Clients should communicate early. Delays may attract penalties as stated in the agreement. Structured solutions may be considered in certain circumstances.',
+    },
+    {
+      question: 'Why should I choose Accus Capital?',
+      answer: 'We combine regulatory compliance, disciplined risk management, transparent processes, and professional service delivery to build trusted financial relationships.',
     },
   ];
 

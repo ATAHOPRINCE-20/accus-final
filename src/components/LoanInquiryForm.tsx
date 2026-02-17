@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, ChevronRight, ChevronLeft, Check } from "lucide-react";
 import { ModalWrapper } from "./ui/ModalWrapper";
+import { sendLoanInquiry } from "../utils/emailService";
+import { toast } from "sonner";
 
 interface FormData {
   fullName: string;
@@ -51,9 +53,41 @@ export function LoanInquiryForm({ onClose }: LoanInquiryFormProps) {
     if (currentStep > 1) setCurrentStep((prev) => prev - 1);
   };
 
-  const handleSubmit = () => {
-    console.log("Form submitted:", formData);
-    alert("Loan inquiry submitted successfully!");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+// ...
+
+  const handleSubmit = async () => {
+    // Defensive check: Ensure all required fields are filled
+    const requiredFields: (keyof FormData)[] = [
+      "fullName", "phoneNumber", "loanAmount", "purpose", 
+      "incomeSource", "timeline", "contactMethod"
+    ];
+    
+    const missingFields = requiredFields.filter(field => !formData[field]);
+    
+    if (missingFields.length > 0) {
+      toast.error("Please fill in all required fields before submitting.");
+      return;
+    }
+
+    // Validate phone number format
+    const phone = formData.phoneNumber.trim();
+    if (!phone.startsWith("0") && !phone.startsWith("+256")) {
+      toast.error("Phone number must start with 0 or +256");
+      return;
+    }
+
+    setIsSubmitting(true);
+    const result = await sendLoanInquiry(formData);
+    setIsSubmitting(false);
+
+    if (result.success) {
+      toast.success("Loan inquiry submitted successfully! We will contact you shortly.");
+      onClose?.();
+    } else {
+      toast.error("Failed to submit inquiry. Please try again or contact us directly.");
+    }
   };
 
   const canProceed = () => {
@@ -371,10 +405,23 @@ export function LoanInquiryForm({ onClose }: LoanInquiryFormProps) {
               ) : (
                 <button
                   onClick={handleSubmit}
-                  className="flex-1 bg-[#00A99D] text-white rounded-lg h-12 flex items-center justify-center"
+                  disabled={isSubmitting}
+                  className="flex-1 bg-[#00A99D] text-white rounded-lg h-12 flex items-center justify-center disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  Submit
-                  <Check className="ml-2" />
+                  {isSubmitting ? (
+                    <span className="flex items-center">
+                      <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      Sending...
+                    </span>
+                  ) : (
+                    <>
+                      Submit
+                      <Check className="ml-2" />
+                    </>
+                  )}
                 </button>
               )}
             </div>
