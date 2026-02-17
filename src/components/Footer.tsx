@@ -23,7 +23,7 @@ export function Footer() {
     { icon: Twitter, href: '#' },
     { icon: Instagram, href: 'https://www.instagram.com/accus.capital/' },
     { icon: Linkedin, href: '#' },
-    { icon: TikTokIcon, href: 'https://www.tiktok.com/@accus.capital' },
+    { icon: TikTokIcon, href: 'https://www.tiktok.com/@accuscapital' },
   ];
 
   return (

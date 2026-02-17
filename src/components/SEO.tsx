@@ -59,7 +59,8 @@ export function SEO({ title, description, keywords, name = 'Accus Capital', type
           "sameAs": [
             "https://www.facebook.com/accuscapital",
             "https://twitter.com/accuscapital",
-            "https://www.linkedin.com/company/accuscapital"
+            "https://www.linkedin.com/company/accuscapital",
+            "https://www.tiktok.com/@accuscapital"
           ]
         })}
       </script>

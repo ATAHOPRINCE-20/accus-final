@@ -9,7 +9,7 @@ export function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://res.cloudinary.com/dywusgc6j/image/upload/v1770474396/back-view-hand-holding-credit-card_1_imv6bl.jpg"
+          src="https://res.cloudinary.com/dywusgc6j/image/upload/v1771095327/business-entrepreneur-signing-contracts-documents-approve-activity_1_edebbm.jpg"
           alt="Accus Capital"
           className="w-full h-full object-cover opacity-40"
         />
