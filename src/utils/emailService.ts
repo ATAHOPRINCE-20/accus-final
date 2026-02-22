@@ -40,8 +40,13 @@ export const sendLoanInquiry = async (data: LoanInquiryData) => {
     );
 
     return { success: true, response };
-  } catch (error) {
+  } catch (error: any) {
     console.error('EmailJS Error:', error);
+    console.error('Status:', error?.status);
+    console.error('Text:', error?.text);
+    console.error('SERVICE_ID:', SERVICE_ID);
+    console.error('TEMPLATE_ID:', TEMPLATE_ID);
+    console.error('PUBLIC_KEY:', PUBLIC_KEY ? PUBLIC_KEY.substring(0, 5) + '...' : 'MISSING');
     return { success: false, error };
   }
 };

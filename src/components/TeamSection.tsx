@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 export function TeamSection() {
   const teamMembers = [
     {
-      name: 'Counsel Phiona Kebikomi',
+      name: 'Ms Phiona Kebikomi',
       position: 'Chair of the Board',
       image: 'https://res.cloudinary.com/dywusgc6j/image/upload/v1771272246/PHOTO-2026-02-16-16-21-51_b5jpbi.jpg',
       bio: 'Leads the Board in setting strategic direction, ensuring good governance, and driving the institution\'s long-term growth and sustainability.',

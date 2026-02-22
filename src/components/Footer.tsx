@@ -169,7 +169,7 @@ export function Footer() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="mt-4 text-center text-xs text-gray-400"
+            className="mt-4 text-center text-xs bg-gray-900 text-white py-2 px-4 rounded"
           >
              Member of Uganda Microfinance Regulatory Authority(UMRA)
           </motion.div>

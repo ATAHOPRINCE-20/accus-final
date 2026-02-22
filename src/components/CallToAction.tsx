@@ -1,9 +1,26 @@
 import { motion } from 'motion/react';
 import { Button } from './ui/button';
 import { ArrowRight, Phone, Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 export function CallToAction() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleCalculatorClick = (e: MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname !== '/services') {
+      navigate('/services');
+      setTimeout(() => {
+        const el = document.getElementById('calculator');
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    } else {
+      const el = document.getElementById('calculator');
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section className="py-20 relative overflow-hidden">
       {/* Background with gradient */}
@@ -85,15 +102,12 @@ export function CallToAction() {
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Button>
             </Link>
-            <Link to="/services">
-              <Button
-                size="lg"
-                variant="outline"
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#00A99D] px-10 py-6 rounded-full transition-all duration-300 text-lg"
-              >
-                Calculate Your Loan
-              </Button>
-            </Link>
+            <button
+              onClick={handleCalculatorClick}
+              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#00A99D] px-10 py-6 rounded-full transition-all duration-300 text-lg font-medium"
+            >
+              Calculate Your Loan
+            </button>
           </motion.div>
 
           {/* Contact Information */}
